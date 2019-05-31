@@ -107,12 +107,12 @@ db.users.find({Email:req.params.username}, function(err,data){
 })
 
 
-app.get('/sendmessage/:msg/:chatId', function(req,res){
-	api.sendmessage({
-		text:req.params.msg
+// app.get('/sendmessage/:msg/:chatId', function(req,res){
+// 	api.sendmessage({
+// 		text:req.params.msg
 
-	})
-})
+// 	})
+// })
 
 app.listen('3000', function(){
 console.log("started")
